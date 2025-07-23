@@ -3,14 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Rock : MonoBehaviour
 {
-    public float ShakeAmount;
+    public float RockPurityLevel;
 
     public bool isBeingHeld;
-
-    public Vector3 PositionBeforeShake;
 
     public Vector3 PositionAfterShake;
 
@@ -20,7 +19,7 @@ public class Rock : MonoBehaviour
 
     public float ShakeCalcTimer;
 
-    public float MaxCleanAmount;
+    public RockSO RockData;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +29,7 @@ public class Rock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isBeingHeld && ShakeCalcTimer > 0.0f && ShakeAmount != MaxCleanAmount)
+        if (isBeingHeld && ShakeCalcTimer > 0.0f && RockPurityLevel != RockData.MaxPurityLevel)
         {
             CalculateShakeAmount();
         }
@@ -46,9 +45,15 @@ public class Rock : MonoBehaviour
         }
     }
 
+    public void DestroyRock()
+    {
+        RockGameManager.Instance.RemoveRockFromList(gameObject);
+        Destroy(gameObject);
+    }
+
     private void CalculateShakeAmount()
     {
-        if (Velocity.magnitude > 100.0f)
+        if (Velocity.magnitude > 70.0f)
         {
             UpdateShakeAmount(1.0f);
         }
@@ -56,9 +61,9 @@ public class Rock : MonoBehaviour
 
     private void UpdateShakeAmount(float ValueToAdd)
     {
-        ShakeAmount += ValueToAdd;
+        RockPurityLevel += ValueToAdd;
 
-        switch (ShakeAmount)
+        switch (RockPurityLevel)
         {
             case 250.0f:
                 Destroy(SandParticles[0]);    
@@ -92,7 +97,7 @@ public class Rock : MonoBehaviour
         // Update the last position
         PositionAfterShake = touchPosition;
         
-        Debug.Log(Velocity.magnitude);
+        RockGameManager.Instance.CalculateRockPurity(RockPurityLevel);
     }
 
     private void OnMouseUp()
@@ -106,12 +111,6 @@ public class Rock : MonoBehaviour
         {
             UpdateShakeAmount(1);
         }
-
-        if (other.CompareTag("Crate"))
-        {
-            RockGameManager.Instance.UpdateLevelScore();
-            Debug.Log("Placed rock in crate");
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -119,7 +118,16 @@ public class Rock : MonoBehaviour
         if (other.gameObject.CompareTag("Crate"))
         {
             Debug.Log("Placed rock in crate");
-            RockGameManager.Instance.CalculateRockPurity(ShakeAmount);
+            
+            RockGameManager.Instance.SellRock(this);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Crate"))
+        {
+            RockGameManager.Instance.RemoveRockFromList(this.gameObject);
         }
     }
 }
