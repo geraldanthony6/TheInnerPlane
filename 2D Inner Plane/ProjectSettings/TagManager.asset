@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hanger
   - ShakeWall
+  - Crate
   layers:
   - Default
   - TransparentFX

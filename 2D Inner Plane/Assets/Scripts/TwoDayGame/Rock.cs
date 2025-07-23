@@ -106,5 +106,20 @@ public class Rock : MonoBehaviour
         {
             UpdateShakeAmount(1);
         }
+
+        if (other.CompareTag("Crate"))
+        {
+            RockGameManager.Instance.UpdateLevelScore();
+            Debug.Log("Placed rock in crate");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Crate"))
+        {
+            Debug.Log("Placed rock in crate");
+            RockGameManager.Instance.CalculateRockPurity(ShakeAmount);
+        }
     }
 }
