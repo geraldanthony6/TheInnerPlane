@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sims.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/TwoDayRockGameScenes/RockGameMainMenu.unity
+    guid: 8d6a2e1b0595ec14e921b799eecf1205
+  - enabled: 1
+    path: Assets/Scenes/TwoDayRockGameScenes/RockGame.unity
+    guid: 40f1833489421d649baf174cc9c13cbc
   m_configObjects: {}

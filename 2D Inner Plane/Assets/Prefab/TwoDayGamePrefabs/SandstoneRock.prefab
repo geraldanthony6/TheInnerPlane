@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 5005259369318764638}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34700012, y: -0.04400003, z: 0}
-  m_LocalScale: {x: 0.1625, y: 0.4125, z: 1}
+  m_LocalPosition: {x: -1.65, y: -2.45, z: 0}
+  m_LocalScale: {x: 2.508025, y: 4.8872995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2829925232695761021}
@@ -110,8 +110,8 @@ Transform:
   m_GameObject: {fileID: 5670865769694119608}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.176, y: 0.332, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.5375, z: 1}
+  m_LocalPosition: {x: -5.31, y: 2.2, z: 0}
+  m_LocalScale: {x: 4.19895, y: 3.707675, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2829925232695761021}
@@ -194,8 +194,8 @@ Transform:
   m_GameObject: {fileID: 6627254932811827651}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.347, z: 0}
-  m_LocalScale: {x: 0.525, y: 0.4375, z: 1}
+  m_LocalPosition: {x: 5.87, y: 1.66, z: 0}
+  m_LocalScale: {x: 4.359571, y: 3.8915627, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2829925232695761021}
@@ -262,9 +262,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2829925232695761021}
   - component: {fileID: 8134550044780684046}
-  - component: {fileID: 5356904990121642163}
   - component: {fileID: 4244654215876304069}
   - component: {fileID: 6732818945590722150}
+  - component: {fileID: 2162001288053395744}
   m_Layer: 0
   m_Name: SandstoneRock
   m_TagString: Untagged
@@ -281,8 +281,8 @@ Transform:
   m_GameObject: {fileID: 7516051521389784180}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -0.6936345, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06219976, y: 0.06094669, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1765288349120055873}
@@ -331,7 +331,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0211fe7d83ae0e647805f2412da24fb5, type: 3}
   m_Color: {r: 0.8396226, g: 0.5784004, b: 0.16237983, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -342,41 +342,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &5356904990121642163
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7516051521389784180}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!50 &4244654215876304069
 Rigidbody2D:
   serializedVersion: 4
@@ -426,3 +391,48 @@ MonoBehaviour:
   - {fileID: 5005259369318764638}
   ShakeCalcTimer: 0
   RockData: {fileID: 11400000, guid: c5dccd64e1ae98a4cbe65b8f2a857028, type: 2}
+--- !u!61 &2162001288053395744
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7516051521389784180}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8}
+  m_EdgeRadius: 0

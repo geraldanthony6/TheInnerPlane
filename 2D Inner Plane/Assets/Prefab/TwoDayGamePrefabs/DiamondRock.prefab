@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 3297968742675461544}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34700012, y: -0.04400003, z: 0}
-  m_LocalScale: {x: 0.1625, y: 0.4125, z: 1}
+  m_LocalPosition: {x: 2.14, y: 1.42, z: 0}
+  m_LocalScale: {x: 1.6397873, y: 1.3880625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2801423311866660750}
@@ -94,9 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2801423311866660750}
   - component: {fileID: 6669212199704592280}
-  - component: {fileID: 4389257245355886033}
   - component: {fileID: 3128092278206424720}
   - component: {fileID: 8757321697897120386}
+  - component: {fileID: 2319556347244524059}
   m_Layer: 0
   m_Name: DiamondRock
   m_TagString: Untagged
@@ -113,8 +113,8 @@ Transform:
   m_GameObject: {fileID: 4573218608181407824}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1641946, y: -0.6936345, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2168, y: 0.2281, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6917382318292147582}
@@ -163,7 +163,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba739c49f277f3649ba7e3a1409d6d31, type: 3}
   m_Color: {r: 0, g: 0.843843, b: 0.8867924, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -174,41 +174,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &4389257245355886033
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4573218608181407824}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!50 &3128092278206424720
 Rigidbody2D:
   serializedVersion: 4
@@ -258,6 +223,53 @@ MonoBehaviour:
   - {fileID: 3297968742675461544}
   ShakeCalcTimer: 0
   RockData: {fileID: 11400000, guid: 2737e58143fd7f54394b2b4b73a6a375, type: 2}
+--- !u!68 &2319556347244524059
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4573218608181407824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -3.3352826, y: 1.2643774}
+  - {x: -0.048798084, y: -2.533415}
+  - {x: 3.1999998, y: 1.1465118}
+  - {x: 3.346556, y: 1.2536625}
+  - {x: 1.7795322, y: 2.485895}
+  - {x: -1.7941835, y: 2.5180404}
+  - {x: -2.0196548, y: 2.5287554}
+  - {x: -3.3161132, y: 1.2536627}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &8668203741230516895
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,8 +296,8 @@ Transform:
   m_GameObject: {fileID: 8668203741230516895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.176, y: 0.332, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.5375, z: 1}
+  m_LocalPosition: {x: -1.787, y: 1.246, z: 0}
+  m_LocalScale: {x: 1.7110722, y: 1.7035322, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2801423311866660750}
@@ -368,8 +380,8 @@ Transform:
   m_GameObject: {fileID: 8821066234435465183}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.347, z: 0}
-  m_LocalScale: {x: 0.525, y: 0.4375, z: 1}
+  m_LocalPosition: {x: -0.39, y: -1.2, z: 0}
+  m_LocalScale: {x: 1.3025249, y: 1.357125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2801423311866660750}
