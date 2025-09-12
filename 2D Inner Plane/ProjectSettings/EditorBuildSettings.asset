@@ -14,4 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TwoDayRockGameScenes/RockGame.unity
     guid: 40f1833489421d649baf174cc9c13cbc
+  - enabled: 1
+    path: Assets/Scenes/OneWeekGame/CharacterCreationScreen.unity
+    guid: affc71d10f3b0cf4fa4cecdbab97d513
+  - enabled: 1
+    path: Assets/Scenes/OneWeekGame/Test.unity
+    guid: be34c32362a2f0c4dac85fb352fab8c6
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
