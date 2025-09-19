@@ -20,5 +20,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OneWeekGame/Test.unity
     guid: be34c32362a2f0c4dac85fb352fab8c6
+  - enabled: 1
+    path: Assets/Scenes/OneWeekGame/HouseSelectionArea.unity
+    guid: cf011fef1005d1e41b56b1f37ebbdf8e
+  - enabled: 1
+    path: Assets/Scenes/OneWeekGame/OpenWorldLevel.unity
+    guid: e3cdd15f60b034f438212b97ffbf20e1
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

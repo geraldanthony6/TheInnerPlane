@@ -75,4 +75,14 @@ public class CharacterCreationManager : MonoBehaviour
         SceneManager.LoadScene("Test");
     }
 
+    public void LoadHouseScene()
+    {
+        SceneManager.LoadScene("HouseSelectionArea");
+    }
+
+    public void LoadOpenWorldScene()
+    {
+        SceneManager.LoadScene("OpenWorldLevel");
+    }
+
 }

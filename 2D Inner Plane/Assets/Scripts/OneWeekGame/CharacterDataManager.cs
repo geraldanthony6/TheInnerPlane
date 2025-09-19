@@ -8,6 +8,8 @@ public class CharacterDataManager : MonoBehaviour
     public Color CharacterColor;
 
     public Vector3 CharacterSize;
+
+    public HouseSelector.HouseType HouseTypeSelected;
     
     private void Awake()
     {
